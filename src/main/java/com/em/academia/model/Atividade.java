@@ -1,6 +1,6 @@
-package com.em.model;
+package com.em.academia.model;
 
-import com.em.model.enums.TipoAtividade;
+import com.em.model.academia.enums.TipoAtividade;
 
 public class Atividade {
 
@@ -30,6 +30,11 @@ public class Atividade {
 
 	public void setCaloriasPerdidas(int caloriasPerdidas) {
 		this.caloriasPerdidas = caloriasPerdidas;
+	}
+
+	public void executar() {
+		tipo.executa(this);
+		
 	}
 
 }
